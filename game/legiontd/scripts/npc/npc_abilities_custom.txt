@@ -1,0 +1,24 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+  "colonist_make_building"
+  {
+    "BaseClass" "ability_datadriven"
+    "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    "AbilityManaCost" "0"
+    "AbilityTextureName" "axe_battle_hunger"
+    "AbilityCastRange" "500"
+    "AbilityCastPoint" "0"
+    "AbilityChannelTime" "1.5"
+    "OnChannelSucceeded"
+    {
+      "SpawnUnit"
+      { "Target"   "POINT"
+        "UnitName" "npc_dota_building_homebase"
+        "UnitCount" "1"
+        "SpawnRadius" "0"
+      }
+    }
+  }
+}
